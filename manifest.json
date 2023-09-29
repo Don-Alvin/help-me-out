@@ -1,0 +1,25 @@
+{
+    "manifest_version": 3,
+    "name": "Help Me Out",
+    "version": "1.0",
+    "description": "Help your friends and loved ones by creating and sending videos on how to get things done",
+    "permissions": ["desktopCapture"],
+    "action": {
+        "default_icon": {
+            "16":"images/icon.png",
+            "24":"images/icon.png",
+            "32":"images/icon.png",
+            "48":"images/icon.png",
+            "128":"images/icon.png"
+        },
+        "default_popup" : "popup.html",
+        "default_title": "Help Me Out"
+    },
+    "host_permissions":[
+        "http://*/",
+        "https://*/*"
+    ],
+    "icons": {
+        "128":"images/icon.png"
+    }
+}

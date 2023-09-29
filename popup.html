@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="popup.css">
+    <title>Document</title>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <img class="logo" src="images/logo.svg" alt="logo" />
+            <div class="nav-icons">
+                <img class="settings" src="images/settingsIcon.svg" alt="settings" />
+                <img id="close" class="close" src="images/closeIcon.svg" alt="close" />
+            </div>
+        </nav>
+        <p class="header-text">This extension helps you record and share help videos with ease</p>
+    </header>
+    <section class="main">
+        <div class="screens">
+            <div>
+                <img src="images/fullscreenIcon.svg" alt="full screen" />
+                <span>Full screen</span>
+            </div>
+            <div>
+                <img src="images/copy.svg" alt="current tab" />
+                <span>Current Tab</span>
+            </div>
+        </div>
+        <div class="media">
+            <div class="camera">
+                <div class="logo-text">
+                    <img src="images/video.svg" alt="video" />
+                    <span>Camera</span>
+                </div>
+                <label class="switch">
+                    <input id="cameraCheckbox" checked type="checkbox">
+                    <span class="slider round"></span>
+                </label>
+            </div>
+            <div class="audio">
+                <div class="logo-text">
+                    <img src="images/audio.svg" alt="audio" />
+                    <span>Audio</span>
+                </div>
+                <label class="switch">
+                    <input id="audioCheckbox" checked type="checkbox">
+                    <span class="slider round"></span>
+                </label>
+            </div>
+            <button id="button" class="button">Start Recording</button>
+        </div>
+    </section>
+    <script src='popup.js'></script>
+</body>
+</html>
