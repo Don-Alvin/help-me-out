@@ -195,3 +195,8 @@ input:checked + .slider:before {
 	border: none;
 	cursor: pointer;
 }
+
+video {
+	position: absolute;
+	top: 0;
+}

@@ -3,7 +3,7 @@
     "name": "Help Me Out",
     "version": "1.0",
     "description": "Help your friends and loved ones by creating and sending videos on how to get things done",
-    "permissions": ["desktopCapture"],
+    "permissions": ["tabs", "activeTab", "scripting"],
     "action": {
         "default_icon": {
             "16":"images/icon.png",
@@ -14,6 +14,9 @@
         },
         "default_popup" : "popup.html",
         "default_title": "Help Me Out"
+    },
+    "background":{
+        "service_worker": "background.js"
     },
     "host_permissions":[
         "http://*/",
